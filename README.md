@@ -1,7 +1,7 @@
 AlbertViscasillasCodingTest
 ===========================
 
-<h3>Usage</h3>
+<h2>Usage</h2>
 
 <b>At terminal:</b>
 
@@ -9,7 +9,7 @@ $ cd AlbertViscasillasCodingTest
 $ ruby main.rb <file_input_name> <file_output_name>
 
 
-<h3>Usage example</h3>
+<h2>Usage example</h2>
 
 <b>Create file named "INPUT":</b>
 
