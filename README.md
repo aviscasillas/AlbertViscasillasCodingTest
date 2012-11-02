@@ -22,5 +22,5 @@ $ cd AlbertViscasillasCodingTest<br/>
 $ ruby main.rb INPUT OUTPUT<br/>
 
 <h5>View the output at OUTPUT file:</h5>
-1 2 N<br/>
+1 3 N<br/>
 5 1 E
