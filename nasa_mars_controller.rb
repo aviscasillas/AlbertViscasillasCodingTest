@@ -23,14 +23,14 @@ class NASAMarsController
 
 			    if counter == 0
 
-			   		# Plateau limits
-			    	line_array = line.strip.split(' ')
+					# Plateau limits
+					line_array = line.strip.split(' ')
 
-			   		plateau_limit_x = line_array[0]
-			   		plateau_limit_y = line_array[1]
+					plateau_limit_x = line_array[0]
+					plateau_limit_y = line_array[1]
 
-			   		# Rover init
-			   		rover = Rover.new(plateau_limit_x, plateau_limit_y)
+					# Rover init
+					rover = Rover.new(plateau_limit_x, plateau_limit_y)
 
 			    elsif counter % 2 != 0
 			    	

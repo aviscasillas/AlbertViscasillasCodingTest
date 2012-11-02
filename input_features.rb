@@ -1,5 +1,5 @@
 #
-# Class InputFeatures provides the features interpretaton at inputs.
+# Class InputFeatures provides the features interpretation at inputs.
 #
 
 class InputFeatures
