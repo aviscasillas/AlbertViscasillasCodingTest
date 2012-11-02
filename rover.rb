@@ -2,15 +2,12 @@
 # Class Rover represents a robotic rover that can be landed by anybody on a rectangular plateau.
 #
 
+require "./input_features.rb"
 
 class Rover
 
-	FACING_NORTH = 'N'
-	FACING_EAST = 'E'
-	FACING_SOUTH = 'S'
-	FACING_WEST = 'W'
-
-	FACING = [FACING_NORTH , FACING_EAST, FACING_SOUTH, FACING_WEST]
+	FACING = [InputFeatures.FACING_NORTH , InputFeatures.FACING_EAST, 
+				InputFeatures.FACING_SOUTH, InputFeatures.FACING_WEST]
 
 	def initialize (max_x, max_y)
 		@max_x = max_x.to_i
@@ -45,11 +42,11 @@ class Rover
 	end
 
 	def move
-		@y += 1 if self.facing == FACING_NORTH && @y < @max_y
-		@y -= 1 if self.facing == FACING_SOUTH && @y > @min_y
+		@y += 1 if self.facing == InputFeatures.FACING_NORTH && @y < @max_y
+		@y -= 1 if self.facing == InputFeatures.FACING_SOUTH && @y > @min_y
 
-		@x += 1 if self.facing == FACING_EAST && @x < @max_x
-		@x -= 1 if self.facing == FACING_WEST && @x > @min_x
+		@x += 1 if self.facing == InputFeatures.FACING_EAST && @x < @max_x
+		@x -= 1 if self.facing == InputFeatures.FACING_WEST && @x > @min_x
 	end
 
 	def facing

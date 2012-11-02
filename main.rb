@@ -1,5 +1,4 @@
 require "./nasa_mars_controller.rb"
-require "./rover.rb"
 
 file_input_name  = ARGV[0] != nil ? ARGV[0] : "INPUT"
 file_output_name = ARGV[1] != nil ? ARGV[1] : "OUTPUT"

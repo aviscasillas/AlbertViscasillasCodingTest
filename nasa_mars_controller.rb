@@ -2,12 +2,10 @@
 # Class NASAMarsController provides the NASA methods for managing the rovers at Mars
 #
 
+require "./input_features.rb"
+require "./rover.rb"
 
 class NASAMarsController
-
-	LEFT = 'L'
-	RIGHT = 'R'
-	MOVE = 'M'
 
 	# Read an input file, and write rovers final position to output file.
 	def self.execute_rovers_moves_input file_input_name, file_output_name
@@ -29,7 +27,7 @@ class NASAMarsController
 			    	line_array = line.strip.split(' ')
 
 			   		plateau_limit_x = line_array[0]
-			   		plateau_limit_y = line_array[2]
+			   		plateau_limit_y = line_array[1]
 
 			   		# Rover init
 			   		rover = Rover.new(plateau_limit_x, plateau_limit_y)
@@ -46,10 +44,10 @@ class NASAMarsController
 			    else
 
 			    	# Rover moves
-			    	line.split('').each do |command|
-			    		rover.left 	if command == LEFT
-			    		rover.right if command == RIGHT
-			    		rover.move 	if command == MOVE
+			    	line.strip.split('').each do |command|
+			    		rover.left 	if command == InputFeatures.LEFT
+			    		rover.right if command == InputFeatures.RIGHT
+			    		rover.move 	if command == InputFeatures.MOVE
 			    	end
 
 			    	file_output.puts(rover.actual_state_string)
