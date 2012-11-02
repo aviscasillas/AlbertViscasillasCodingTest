@@ -19,4 +19,8 @@ MMRMMRMRRM<br/>
 
 <h5>Execute:</h5>
 $ cd AlbertViscasillasCodingTest<br/>
-$ ruby main.rb INPUT OUTPUT
+$ ruby main.rb INPUT OUTPUT<br/>
+
+<h5>View the output at OUTPUT file:</h5>
+1 1 N<br/>
+5 1 E
