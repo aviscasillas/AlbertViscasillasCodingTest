@@ -45,9 +45,9 @@ class NASAMarsController
 
 			    	# Rover moves
 			    	line.strip.split('').each do |command|
-			    		rover.left 	if command == InputFeatures.LEFT
+			    		rover.left if command == InputFeatures.LEFT
 			    		rover.right if command == InputFeatures.RIGHT
-			    		rover.move 	if command == InputFeatures.MOVE
+			    		rover.move if command == InputFeatures.MOVE
 			    	end
 
 			    	file_output.puts(rover.actual_state_string)

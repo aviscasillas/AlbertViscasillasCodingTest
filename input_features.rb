@@ -31,5 +31,5 @@ class InputFeatures
 	def InputFeatures.FACING_WEST
 		'W'
 	end
-	
+
 end
